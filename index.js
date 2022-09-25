@@ -18,9 +18,9 @@ function App(){
     }      
   ]);
 
-  return(<>
-     {todos.map((todo, i) => <div key={i}>{todo.text}</div>)}
-    </>);
+  return(<ul className="list-group">
+     {todos.map((todo, i) => <div key={i} className="list-group-item" >{todo.text}</div>)}
+     </ul>);
 }
 
 ReactDOM.render(
