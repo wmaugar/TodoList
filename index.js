@@ -18,19 +18,12 @@ function App(){
     }      
   ]);
   
-  const [value, setValue] = React.useState('');
-  const handleSubmit = e => {
-      // when submit, the default behaivor is refresh the page, we will prevent this...
-      e.preventDefault();
-      // if 'value' is empty, then do nothing...
-      if (!value) return;
-      // create newTodos, taking current 'todos' and adding new todo...
-      const newTodos = [...todos, {text: value, isCompleted: false}];
-      // Update 'Todos' to 'newTodos' value
-      setTodos(newTodos);
-      // Clean current inpunt value
-      setValue('');
-    };
+  const addTodo = text => {
+    const newTodos = [...todos, {text: text, isCompleted: false}];
+    // Update 'Todos' to 'newTodos' value
+    setTodos(newTodos);
+    // Clean current input value
+  }
 
   const removeTodo = e => {
     let index = Number(e.target.id);
@@ -41,14 +34,8 @@ function App(){
 
   return(<ul className="list-group">
 
-     {todos.map((todo, i) => <div key={i} id={i} onClick ={removeTodo} className="list-group-item">{todo.text}</div>)}
-
-     <form onSubmit = {handleSubmit}>
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="basic-addon1">+</span>
-          <input type="text" className="form-control"  placeholder="new todo ..." value={value} onChange={e => setValue(e.target.value)}/>
-        </div>
-     </form>
+    {todos.map((todo, i) => <div key={i} id={i} onClick ={removeTodo} className="list-group-item">{todo.text}</div>)}
+    <TodoForm addTodo = {addTodo}/>
      </ul>);
 }
 
