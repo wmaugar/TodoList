@@ -31,13 +31,14 @@ function App(){
     setTodos(temp);
   }
 
-  return(<ul className="list-group">
+  return(<div className="app">
+    <ul  className="list-group todo-list">
+      {todos.map((todo, i) =>  
+      <Todo index={i} key={i} todo={todo} remove={removeTodo}/>)}
 
-    {todos.map((todo, i) =>  
-    <Todo index={i} key={i} todo={todo} remove={removeTodo}/>)}
-
-    <TodoForm addTodo = {addTodo}/>
-     </ul>);
+      <TodoForm addTodo = {addTodo}/>
+    </ul>
+     </div>);
 }
 
 ReactDOM.render(
