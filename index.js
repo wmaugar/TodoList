@@ -25,8 +25,7 @@ function App(){
     // Clean current input value
   }
 
-  const removeTodo = e => {
-    let index = Number(e.target.id);
+  const removeTodo = index => {
     let temp = [...todos];
     temp.splice(index, 1);
     setTodos(temp);
@@ -34,7 +33,9 @@ function App(){
 
   return(<ul className="list-group">
 
-    {todos.map((todo, i) => <div key={i} id={i} onClick ={removeTodo} className="list-group-item">{todo.text}</div>)}
+    {todos.map((todo, i) =>  
+    <Todo index={i} key={i} todo={todo} remove={removeTodo}/>)}
+
     <TodoForm addTodo = {addTodo}/>
      </ul>);
 }
