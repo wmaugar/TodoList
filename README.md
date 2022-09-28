@@ -9,19 +9,19 @@
 <h1 align="center">TodoList</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{YOUR_GITHUB_USERNAME}}/todolist?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{wmaugar}}/todolist?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/{{YOUR_GITHUB_USERNAME}}/todolist?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/{{wmaugar}}/todolist?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/{{YOUR_GITHUB_USERNAME}}/todolist?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/{{wmaugar}}/todolist?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/{{YOUR_GITHUB_USERNAME}}/todolist?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/{{wmaugar}}/todolist?color=56BEB8">
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/todolist?color=56BEB8" /> -->
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{wmaugar}}/todolist?color=56BEB8" /> -->
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/todolist?color=56BEB8" /> -->
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{wmaugar}}/todolist?color=56BEB8" /> -->
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{YOUR_GITHUB_USERNAME}}/todolist?color=56BEB8" /> -->
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{wmaugar}}/todolist?color=56BEB8" /> -->
 </p>
 
 <!-- Status -->
@@ -39,30 +39,28 @@
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">Author</a>
+  <a href="https://github.com/{{wmaugar}}" target="_blank">Author</a>
 </p>
 
 <br>
 
 ## :dart: About ##
 
-Describe your project
+This is a "Todo list" application, build using React features.
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Display a pre-defined elements of todo list\
+:heavy_check_mark: Add a new todo element\
+:heavy_check_mark: Remove a todo element;
 
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://getbootstrap.com//)
 
 ## :white_check_mark: Requirements ##
 
@@ -78,10 +76,10 @@ $ git clone https://github.com/{{wmaugar}}/todolist
 $ cd todolist
 
 # Install dependencies
-$ yarn
+$ install http-server
 
 # Run the project
-$ yarn start
+$ http-server -c-1 
 
 # The server will initialize in the <http://localhost:8000>
 ```
